@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "张正 · 个人主页",
+    "title": "小正正 · 个人主页",
     "description": "张正的个人主页：研究、产品策略、数据与人工智能。",
     "ogTitle": "张正 · 个人主页",
     "ogDescription": "Research, product thinking, data analysis, and the stories in between."
@@ -40,7 +40,6 @@
     "nameLast": "Zhang.",
     "nameSecondary": "张正",
     "portraitAlt": "Portrait placeholder with initials ZZ",
-    "portraitImage": "",
     "portraitInitials": "ZZ",
     "heroVertical": "THINK · BUILD · EXPLORE"
   },
@@ -51,7 +50,6 @@
     "toolsLabel": "常用工具",
     "aboutBodyBefore": "我的学习起点是金融学，研究生阶段进一步走向能源与气候经济。快手、京东和滴滴的实习经历，让我有机会把数据分析、产品策略与实际业务结合起来。不同的问题背后，我始终关心同一件事：",
     "aboutBodyEmphasis": "真正需要解决的问题是什么，我们又该如何验证解决效果？",
-    "aboutBodyAfter": "",
     "tool1": "Python",
     "tool2": "SQL",
     "tool3": "Stata",
@@ -136,23 +134,15 @@
     "project4Title": "量化绿色金融对能源转型的影响",
     "project4Body": "通过空间计量、门槛模型和实证检验，研究绿色金融支持清洁能源转型的边界条件与作用机制。",
     "projectsNote": "项目描述采用适合公开展示的概括版本，未披露企业内部指标。",
-    "project1Image": "",
-    "project1ImageAlt": "",
     "project1Footer1": "User Insights",
     "project1Footer2": "LLM",
     "project1Footer3": "Experimentation",
-    "project2Image": "",
-    "project2ImageAlt": "",
     "project2Footer1": "Content Strategy",
     "project2Footer2": "Ranking",
     "project2Footer3": "Quality",
-    "project3Image": "",
-    "project3ImageAlt": "",
     "project3Footer1": "Python",
     "project3Footer2": "Rules Engine",
     "project3Footer3": "Operations",
-    "project4Image": "",
-    "project4ImageAlt": "",
     "project4Footer1": "Econometrics",
     "project4Footer2": "Research",
     "project4Footer3": "Data"
@@ -186,10 +176,7 @@
     "contactEyebrow": "保持联系",
     "contactTitle": "好的想法，往往始于一次交流",
     "contactBody": "如果你也关注研究、产品策略、数据分析，或者只是想交换一些有趣的想法，欢迎交流。",
-    "contactPending": "联系方式与社交链接将在本人确认后补充。",
-    "email": "",
-    "profileUrl": "",
-    "profileLabel": ""
+    "contactPending": "联系方式与社交链接将在本人确认后补充。"
   },
   "footer": {
     "footerCredit": "用好奇心与耐心制作。",
