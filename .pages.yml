@@ -1,0 +1,1159 @@
+# Pages CMS configuration: https://pagescms.org/docs/configuration/
+# Content stays plain text; HTML emphasis and decoration stay in index.html.
+media:
+  - name: "images"
+    label: "图片上传"
+    input: "assets/uploads"
+    output: "/assets/uploads"
+    extensions:
+      - "jpg"
+      - "jpeg"
+      - "png"
+      - "webp"
+      - "gif"
+      - "avif"
+    rename: "safe"
+content:
+  - name: "zh"
+    label: "中文文案"
+    type: "file"
+    path: "content/zh.json"
+    format: "json"
+    operations:
+      delete: false
+    fields:
+      - name: "meta"
+        component: "meta"
+        label: "页面标题与搜索摘要"
+      - name: "ui"
+        component: "ui"
+        label: "导航与操作提示"
+      - name: "home"
+        component: "home"
+        label: "首页与个人照片"
+      - name: "about"
+        component: "about"
+        label: "关于我与工具"
+      - name: "education"
+        component: "education"
+        label: "教育经历"
+      - name: "experience"
+        component: "experience"
+        label: "实习经历"
+      - name: "research"
+        component: "research"
+        label: "科研经历"
+      - name: "projects"
+        component: "projects"
+        label: "项目与项目照片"
+      - name: "honors"
+        component: "honors"
+        label: "荣誉与经历"
+      - name: "interests"
+        component: "interests"
+        label: "生活与兴趣"
+      - name: "contact"
+        component: "contact"
+        label: "联系信息"
+      - name: "footer"
+        component: "footer"
+        label: "页脚"
+  - name: "en"
+    label: "英文文案"
+    type: "file"
+    path: "content/en.json"
+    format: "json"
+    operations:
+      delete: false
+    fields:
+      - name: "meta"
+        component: "meta"
+        label: "页面标题与搜索摘要"
+      - name: "ui"
+        component: "ui"
+        label: "导航与操作提示"
+      - name: "home"
+        component: "home"
+        label: "首页与个人照片"
+      - name: "about"
+        component: "about"
+        label: "关于我与工具"
+      - name: "education"
+        component: "education"
+        label: "教育经历"
+      - name: "experience"
+        component: "experience"
+        label: "实习经历"
+      - name: "research"
+        component: "research"
+        label: "科研经历"
+      - name: "projects"
+        component: "projects"
+        label: "项目与项目照片"
+      - name: "honors"
+        component: "honors"
+        label: "荣誉与经历"
+      - name: "interests"
+        component: "interests"
+        label: "生活与兴趣"
+      - name: "contact"
+        component: "contact"
+        label: "联系信息"
+      - name: "footer"
+        component: "footer"
+        label: "页脚"
+  - name: "style"
+    label: "字号设置"
+    type: "file"
+    path: "content/style.json"
+    format: "json"
+    operations:
+      delete: false
+    fields:
+      - name: "body"
+        label: "全站基础字号（px）"
+        type: "number"
+        required: true
+        description: "范围 14–22 px；默认 16 px。"
+        options:
+          min: 14
+          max: 22
+      - name: "bodyCopy"
+        label: "关于我正文字号（px）"
+        type: "number"
+        required: true
+        description: "范围 12–22 px；默认 15 px。"
+        options:
+          min: 12
+          max: 22
+      - name: "cardBody"
+        label: "卡片正文字号（px）"
+        type: "number"
+        required: true
+        description: "范围 11–20 px；默认 13 px。"
+        options:
+          min: 11
+          max: 20
+      - name: "detailText"
+        label: "详细说明字号（px）"
+        type: "number"
+        required: true
+        description: "范围 10–18 px；默认 12 px。"
+        options:
+          min: 10
+          max: 18
+      - name: "smallText"
+        label: "小字说明字号（px）"
+        type: "number"
+        required: true
+        description: "范围 9–16 px；默认 11 px。"
+        options:
+          min: 9
+          max: 16
+      - name: "microText"
+        label: "微型标签字号（px）"
+        type: "number"
+        required: true
+        description: "范围 8–14 px；默认 10 px。"
+        options:
+          min: 8
+          max: 14
+      - name: "navigation"
+        label: "导航字号（px）"
+        type: "number"
+        required: true
+        description: "范围 11–16 px；默认 13 px。"
+        options:
+          min: 11
+          max: 16
+      - name: "control"
+        label: "按钮控件字号（px）"
+        type: "number"
+        required: true
+        description: "范围 10–16 px；默认 12 px。"
+        options:
+          min: 10
+          max: 16
+      - name: "heroTitle"
+        label: "首页姓名：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 60–120 px；默认 99 px。"
+        options:
+          min: 60
+          max: 120
+      - name: "heroTitleTablet"
+        label: "首页姓名：平板（px）"
+        type: "number"
+        required: true
+        description: "范围 40–72 px；默认 57 px。"
+        options:
+          min: 40
+          max: 72
+      - name: "heroTitleMobile"
+        label: "首页姓名：手机（px）"
+        type: "number"
+        required: true
+        description: "范围 48–88 px；默认 75 px。"
+        options:
+          min: 48
+          max: 88
+      - name: "heroDeck"
+        label: "首页导语：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 24–44 px；默认 34 px。"
+        options:
+          min: 24
+          max: 44
+      - name: "heroDeckTablet"
+        label: "首页导语：平板（px）"
+        type: "number"
+        required: true
+        description: "范围 20–32 px；默认 25 px。"
+        options:
+          min: 20
+          max: 32
+      - name: "heroDeckMobile"
+        label: "首页导语：手机（px）"
+        type: "number"
+        required: true
+        description: "范围 20–36 px；默认 26 px。"
+        options:
+          min: 20
+          max: 36
+      - name: "heroDescription"
+        label: "首页简介：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 15 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "heroDescriptionTablet"
+        label: "首页简介：平板（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 13 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "heroDescriptionMobile"
+        label: "首页简介：手机（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 14 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "secondaryName"
+        label: "首页第二行姓名（px）"
+        type: "number"
+        required: true
+        description: "范围 16–28 px；默认 20 px。"
+        options:
+          min: 16
+          max: 28
+      - name: "sectionTitle"
+        label: "板块标题：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 36–68 px；默认 52 px。"
+        options:
+          min: 36
+          max: 68
+      - name: "sectionTitleTablet"
+        label: "板块标题：平板与手机（px）"
+        type: "number"
+        required: true
+        description: "范围 28–48 px；默认 41 px。"
+        options:
+          min: 28
+          max: 48
+      - name: "sectionIntro"
+        label: "板块引言（px）"
+        type: "number"
+        required: true
+        description: "范围 20–36 px；默认 27 px。"
+        options:
+          min: 20
+          max: 36
+      - name: "educationTitle"
+        label: "教育经历标题（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 14 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "experienceTitle"
+        label: "实习职位：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 16–28 px；默认 19 px。"
+        options:
+          min: 16
+          max: 28
+      - name: "experienceTitleMobile"
+        label: "实习职位：手机（px）"
+        type: "number"
+        required: true
+        description: "范围 15–24 px；默认 18 px。"
+        options:
+          min: 15
+          max: 24
+      - name: "experienceBody"
+        label: "实习内容（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 14 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "researchTitle"
+        label: "科研标题：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 18–34 px；默认 24 px。"
+        options:
+          min: 18
+          max: 34
+      - name: "researchTitleMobile"
+        label: "科研标题：手机（px）"
+        type: "number"
+        required: true
+        description: "范围 16–28 px；默认 20 px。"
+        options:
+          min: 16
+          max: 28
+      - name: "researchBody"
+        label: "科研简介（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 14 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "projectTitle"
+        label: "项目卡片标题（px）"
+        type: "number"
+        required: true
+        description: "范围 18–32 px；默认 23 px。"
+        options:
+          min: 18
+          max: 32
+      - name: "awardTitle"
+        label: "荣誉标题：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 12–20 px；默认 14 px。"
+        options:
+          min: 12
+          max: 20
+      - name: "awardTitleTablet"
+        label: "荣誉标题：平板与手机（px）"
+        type: "number"
+        required: true
+        description: "范围 11–16 px；默认 12 px。"
+        options:
+          min: 11
+          max: 16
+      - name: "interestTitle"
+        label: "兴趣卡片标题（px）"
+        type: "number"
+        required: true
+        description: "范围 14–24 px；默认 16 px。"
+        options:
+          min: 14
+          max: 24
+      - name: "contactTitle"
+        label: "联系标题：桌面（px）"
+        type: "number"
+        required: true
+        description: "范围 40–68 px；默认 55 px。"
+        options:
+          min: 40
+          max: 68
+      - name: "contactTitleMobile"
+        label: "联系标题：手机（px）"
+        type: "number"
+        required: true
+        description: "范围 28–48 px；默认 40 px。"
+        options:
+          min: 28
+          max: 48
+components:
+  meta:
+    label: "页面标题与搜索摘要"
+    type: "object"
+    fields:
+      - name: "title"
+        label: "浏览器标签标题"
+        type: "string"
+        required: true
+      - name: "description"
+        label: "搜索摘要"
+        type: "text"
+        required: true
+      - name: "ogTitle"
+        label: "分享标题"
+        type: "string"
+        required: true
+      - name: "ogDescription"
+        label: "分享摘要"
+        type: "text"
+        required: true
+  ui:
+    label: "导航与操作提示"
+    type: "object"
+    fields:
+      - name: "navAbout"
+        label: "导航：关于我"
+        type: "string"
+        required: true
+      - name: "navExperience"
+        label: "导航：实习经历"
+        type: "string"
+        required: true
+      - name: "navResearch"
+        label: "导航：科研经历"
+        type: "string"
+        required: true
+      - name: "navProjects"
+        label: "导航：项目实践"
+        type: "string"
+        required: true
+      - name: "navBeyond"
+        label: "导航：生活与兴趣"
+        type: "string"
+        required: true
+      - name: "skipLink"
+        label: "跳转正文链接"
+        type: "string"
+        required: true
+      - name: "homepageLabel"
+        label: "首页链接的无障碍说明"
+        type: "string"
+        required: true
+      - name: "navigationLabel"
+        label: "导航栏的无障碍说明"
+        type: "string"
+        required: true
+      - name: "filterLabel"
+        label: "项目筛选的无障碍说明"
+        type: "string"
+        required: true
+      - name: "backToTopLabel"
+        label: "回到顶部的无障碍说明"
+        type: "string"
+        required: true
+      - name: "languageNext"
+        label: "语言切换按钮文字"
+        type: "string"
+        required: true
+      - name: "languageAction"
+        label: "切换语言的无障碍说明"
+        type: "string"
+        required: true
+      - name: "languageTitle"
+        label: "语言切换按钮提示"
+        type: "string"
+        required: true
+      - name: "themeLightAction"
+        label: "切换浅色模式的提示"
+        type: "string"
+        required: true
+      - name: "themeDarkAction"
+        label: "切换深色模式的提示"
+        type: "string"
+        required: true
+  home:
+    label: "首页与个人照片"
+    type: "object"
+    fields:
+      - name: "brand"
+        label: "页眉姓名"
+        type: "string"
+        required: true
+      - name: "portraitCaption"
+        label: "照片占位说明"
+        type: "string"
+        required: true
+      - name: "sideStatus"
+        label: "照片下方状态文字"
+        type: "string"
+        required: true
+      - name: "eyebrow"
+        label: "首页问候语"
+        type: "string"
+        required: true
+      - name: "heroDescription"
+        label: "首页简介"
+        type: "text"
+        required: true
+      - name: "pill1"
+        label: "首页标签 1"
+        type: "string"
+        required: true
+      - name: "pill2"
+        label: "首页标签 2"
+        type: "string"
+        required: true
+      - name: "pill3"
+        label: "首页标签 3"
+        type: "string"
+        required: true
+      - name: "exploreWork"
+        label: "查看项目链接文字"
+        type: "string"
+        required: true
+      - name: "getInTouch"
+        label: "联系链接文字"
+        type: "string"
+        required: true
+      - name: "heroDeckBefore"
+        label: "首页导语：加粗前文字"
+        type: "text"
+        description: "填写纯文本；样式由模板保留。英文分句交界处的前后空格请保留。"
+      - name: "heroDeckEmphasis"
+        label: "首页导语：加粗文字"
+        type: "text"
+        required: true
+        description: "填写纯文本；样式由模板保留。英文分句交界处的前后空格请保留。"
+      - name: "heroDeckAfter"
+        label: "首页导语：加粗后文字"
+        type: "text"
+        description: "填写纯文本；样式由模板保留。英文分句交界处的前后空格请保留。"
+      - name: "nameFirst"
+        label: "首页姓名前半部分"
+        type: "string"
+        required: true
+        description: "英文姓名末尾的空格用于分隔前后两部分，请保留。"
+      - name: "nameLast"
+        label: "首页姓名后半部分（斜体）"
+        type: "string"
+        required: true
+      - name: "nameSecondary"
+        label: "首页第二行姓名"
+        type: "string"
+        required: true
+      - name: "portraitAlt"
+        label: "个人照片或占位图的替代文字"
+        type: "string"
+        required: true
+      - name: "portraitImage"
+        label: "个人照片（可选）"
+        type: "image"
+        options:
+          media: "images"
+        description: "上传或选择照片；留空保留原有占位。两种语言需分别选择。"
+      - name: "portraitInitials"
+        label: "无照片时的占位字母"
+        type: "string"
+        required: true
+      - name: "heroVertical"
+        label: "首页竖排装饰文字"
+        type: "string"
+        required: true
+  about:
+    label: "关于我与工具"
+    type: "object"
+    fields:
+      - name: "sectionAbout"
+        label: "关于我板块侧标"
+        type: "string"
+        required: true
+      - name: "aboutTitle"
+        label: "关于我板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "aboutIntro"
+        label: "关于我引言"
+        type: "text"
+        required: true
+      - name: "toolsLabel"
+        label: "工具列表标题"
+        type: "string"
+        required: true
+      - name: "aboutBodyBefore"
+        label: "关于我正文：斜体前文字"
+        type: "text"
+        description: "填写纯文本；样式由模板保留。英文分句交界处的前后空格请保留。"
+      - name: "aboutBodyEmphasis"
+        label: "关于我正文：斜体文字"
+        type: "text"
+        required: true
+        description: "填写纯文本；样式由模板保留。英文分句交界处的前后空格请保留。"
+      - name: "aboutBodyAfter"
+        label: "关于我正文：斜体后文字"
+        type: "text"
+        description: "填写纯文本；样式由模板保留。英文分句交界处的前后空格请保留。"
+      - name: "tool1"
+        label: "常用工具 1"
+        type: "string"
+        required: true
+      - name: "tool2"
+        label: "常用工具 2"
+        type: "string"
+        required: true
+      - name: "tool3"
+        label: "常用工具 3"
+        type: "string"
+        required: true
+      - name: "tool4"
+        label: "常用工具 4"
+        type: "string"
+        required: true
+      - name: "tool5"
+        label: "常用工具 5"
+        type: "string"
+        required: true
+  education:
+    label: "教育经历"
+    type: "object"
+    fields:
+      - name: "edu1School"
+        label: "教育经历 1：学校"
+        type: "string"
+        required: true
+      - name: "edu1Degree"
+        label: "教育经历 1：学位与专业"
+        type: "string"
+        required: true
+      - name: "edu1Detail"
+        label: "教育经历 1：介绍"
+        type: "string"
+        required: true
+      - name: "edu2School"
+        label: "教育经历 2：学校"
+        type: "string"
+        required: true
+      - name: "edu2Degree"
+        label: "教育经历 2：学位与专业"
+        type: "string"
+        required: true
+      - name: "edu2Detail"
+        label: "教育经历 2：介绍"
+        type: "string"
+        required: true
+      - name: "edu1Mark"
+        label: "教育经历 1：学校缩写"
+        type: "string"
+        required: true
+      - name: "edu1Year"
+        label: "教育经历 1：年份"
+        type: "string"
+        required: true
+      - name: "edu2Mark"
+        label: "教育经历 2：学校缩写"
+        type: "string"
+        required: true
+      - name: "edu2Year"
+        label: "教育经历 2：年份"
+        type: "string"
+        required: true
+  experience:
+    label: "实习经历"
+    type: "object"
+    fields:
+      - name: "sectionExperience"
+        label: "实习板块侧标"
+        type: "string"
+        required: true
+      - name: "experienceTitle"
+        label: "实习板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "experienceSummary"
+        label: "实习板块简介"
+        type: "text"
+        required: true
+      - name: "exp1Title"
+        label: "实习 1：职位"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "exp1Body"
+        label: "实习 1：内容"
+        type: "text"
+        required: true
+      - name: "exp1Tag1"
+        label: "实习 1：标签 1"
+        type: "string"
+        required: true
+      - name: "exp1Tag2"
+        label: "实习 1：标签 2"
+        type: "string"
+        required: true
+      - name: "exp1Tag3"
+        label: "实习 1：标签 3"
+        type: "string"
+        required: true
+      - name: "exp2Title"
+        label: "实习 2：职位"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "exp2Body"
+        label: "实习 2：内容"
+        type: "text"
+        required: true
+      - name: "exp2Tag2"
+        label: "实习 2：标签 2"
+        type: "string"
+        required: true
+      - name: "exp2Tag3"
+        label: "实习 2：标签 3"
+        type: "string"
+        required: true
+      - name: "earlier"
+        label: "第三段实习时间"
+        type: "string"
+        required: true
+      - name: "exp3Title"
+        label: "实习 3：职位"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "exp3Body"
+        label: "实习 3：内容"
+        type: "text"
+        required: true
+      - name: "exp3Tag1"
+        label: "实习 3：标签 1"
+        type: "string"
+        required: true
+      - name: "exp3Tag2"
+        label: "实习 3：标签 2"
+        type: "string"
+        required: true
+      - name: "exp1Year"
+        label: "实习 1：时间"
+        type: "string"
+        required: true
+      - name: "exp1Org"
+        label: "实习 1：公司与部门"
+        type: "string"
+        required: true
+      - name: "exp2Year"
+        label: "实习 2：时间"
+        type: "string"
+        required: true
+      - name: "exp2Org"
+        label: "实习 2：公司与部门"
+        type: "string"
+        required: true
+      - name: "exp2Tag1"
+        label: "实习 2：标签 1"
+        type: "string"
+        required: true
+      - name: "exp3Org"
+        label: "实习 3：公司与部门"
+        type: "string"
+        required: true
+  research:
+    label: "科研经历"
+    type: "object"
+    fields:
+      - name: "sectionResearch"
+        label: "科研板块侧标"
+        type: "string"
+        required: true
+      - name: "researchTitle"
+        label: "科研板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "researchSummary"
+        label: "科研板块简介"
+        type: "text"
+        required: true
+      - name: "researchLabel1"
+        label: "研究 1：类型标签"
+        type: "string"
+        required: true
+      - name: "researchFocus1"
+        label: "研究 1：方向"
+        type: "string"
+        required: true
+      - name: "paperDesc"
+        label: "研究 1：简介"
+        type: "text"
+        required: true
+      - name: "researchLabel2"
+        label: "研究 2：类型标签"
+        type: "string"
+        required: true
+      - name: "researchFocus2"
+        label: "研究 2：方向"
+        type: "string"
+        required: true
+      - name: "research2Title"
+        label: "研究 2：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "research2Body"
+        label: "研究 2：简介"
+        type: "text"
+        required: true
+      - name: "researchFootnote"
+        label: "科研板块说明"
+        type: "text"
+        required: true
+      - name: "research1Title"
+        label: "研究 1：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "research1Method1"
+        label: "研究 1：方法 1"
+        type: "string"
+        required: true
+      - name: "research1Method2"
+        label: "研究 1：方法 2"
+        type: "string"
+        required: true
+      - name: "research1Method3"
+        label: "研究 1：方法 3"
+        type: "string"
+        required: true
+      - name: "research2Method1"
+        label: "研究 2：方法 1"
+        type: "string"
+        required: true
+      - name: "research2Method2"
+        label: "研究 2：方法 2"
+        type: "string"
+        required: true
+      - name: "research2Method3"
+        label: "研究 2：方法 3"
+        type: "string"
+        required: true
+  projects:
+    label: "项目与项目照片"
+    type: "object"
+    fields:
+      - name: "sectionProjects"
+        label: "项目板块侧标"
+        type: "string"
+        required: true
+      - name: "projectsTitle"
+        label: "项目板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "projectsAside"
+        label: "项目板块标题旁说明"
+        type: "string"
+        required: true
+      - name: "filterAll"
+        label: "筛选按钮：全部"
+        type: "string"
+        required: true
+      - name: "filterProduct"
+        label: "筛选按钮：产品与 AI"
+        type: "string"
+        required: true
+      - name: "filterData"
+        label: "筛选按钮：数据与自动化"
+        type: "string"
+        required: true
+      - name: "filterResearch"
+        label: "筛选按钮：科研"
+        type: "string"
+        required: true
+      - name: "project1Type"
+        label: "项目 1：类型文字"
+        type: "string"
+        required: true
+      - name: "project1Title"
+        label: "项目 1：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "project1Body"
+        label: "项目 1：简介"
+        type: "text"
+        required: true
+      - name: "project2Type"
+        label: "项目 2：类型文字"
+        type: "string"
+        required: true
+      - name: "project2Title"
+        label: "项目 2：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "project2Body"
+        label: "项目 2：简介"
+        type: "text"
+        required: true
+      - name: "project3Type"
+        label: "项目 3：类型文字"
+        type: "string"
+        required: true
+      - name: "project3Title"
+        label: "项目 3：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "project3Body"
+        label: "项目 3：简介"
+        type: "text"
+        required: true
+      - name: "project4Type"
+        label: "项目 4：类型文字"
+        type: "string"
+        required: true
+      - name: "project4Title"
+        label: "项目 4：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "project4Body"
+        label: "项目 4：简介"
+        type: "text"
+        required: true
+      - name: "projectsNote"
+        label: "项目板块说明"
+        type: "text"
+        required: true
+      - name: "project1Image"
+        label: "项目 1：照片（可选）"
+        type: "image"
+        options:
+          media: "images"
+        description: "上传或选择照片；留空保留原有占位。两种语言需分别选择。"
+      - name: "project1ImageAlt"
+        label: "项目 1：照片替代文字（可选）"
+        type: "string"
+      - name: "project1Footer1"
+        label: "项目 1：页脚标签 1"
+        type: "string"
+        required: true
+      - name: "project1Footer2"
+        label: "项目 1：页脚标签 2"
+        type: "string"
+        required: true
+      - name: "project1Footer3"
+        label: "项目 1：页脚标签 3"
+        type: "string"
+        required: true
+      - name: "project2Image"
+        label: "项目 2：照片（可选）"
+        type: "image"
+        options:
+          media: "images"
+        description: "上传或选择照片；留空保留原有占位。两种语言需分别选择。"
+      - name: "project2ImageAlt"
+        label: "项目 2：照片替代文字（可选）"
+        type: "string"
+      - name: "project2Footer1"
+        label: "项目 2：页脚标签 1"
+        type: "string"
+        required: true
+      - name: "project2Footer2"
+        label: "项目 2：页脚标签 2"
+        type: "string"
+        required: true
+      - name: "project2Footer3"
+        label: "项目 2：页脚标签 3"
+        type: "string"
+        required: true
+      - name: "project3Image"
+        label: "项目 3：照片（可选）"
+        type: "image"
+        options:
+          media: "images"
+        description: "上传或选择照片；留空保留原有占位。两种语言需分别选择。"
+      - name: "project3ImageAlt"
+        label: "项目 3：照片替代文字（可选）"
+        type: "string"
+      - name: "project3Footer1"
+        label: "项目 3：页脚标签 1"
+        type: "string"
+        required: true
+      - name: "project3Footer2"
+        label: "项目 3：页脚标签 2"
+        type: "string"
+        required: true
+      - name: "project3Footer3"
+        label: "项目 3：页脚标签 3"
+        type: "string"
+        required: true
+      - name: "project4Image"
+        label: "项目 4：照片（可选）"
+        type: "image"
+        options:
+          media: "images"
+        description: "上传或选择照片；留空保留原有占位。两种语言需分别选择。"
+      - name: "project4ImageAlt"
+        label: "项目 4：照片替代文字（可选）"
+        type: "string"
+      - name: "project4Footer1"
+        label: "项目 4：页脚标签 1"
+        type: "string"
+        required: true
+      - name: "project4Footer2"
+        label: "项目 4：页脚标签 2"
+        type: "string"
+        required: true
+      - name: "project4Footer3"
+        label: "项目 4：页脚标签 3"
+        type: "string"
+        required: true
+  honors:
+    label: "荣誉与经历"
+    type: "object"
+    fields:
+      - name: "sectionHighlights"
+        label: "荣誉板块侧标"
+        type: "string"
+        required: true
+      - name: "highlightsTitle"
+        label: "荣誉板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "award1Title"
+        label: "荣誉 1：名称"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "award1Detail"
+        label: "荣誉 1：奖项"
+        type: "string"
+        required: true
+      - name: "award2Title"
+        label: "荣誉 2：名称"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "award2Detail"
+        label: "荣誉 2：奖项"
+        type: "string"
+        required: true
+      - name: "award3Title"
+        label: "荣誉 3：名称"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "award3Detail"
+        label: "荣誉 3：奖项"
+        type: "string"
+        required: true
+      - name: "highlightsFootnote"
+        label: "荣誉板块说明"
+        type: "text"
+        required: true
+      - name: "award1Year"
+        label: "荣誉 1：年份"
+        type: "string"
+        required: true
+      - name: "award2Year"
+        label: "荣誉 2：年份"
+        type: "string"
+        required: true
+      - name: "award3Year"
+        label: "荣誉 3：年份"
+        type: "string"
+        required: true
+  interests:
+    label: "生活与兴趣"
+    type: "object"
+    fields:
+      - name: "sectionBeyond"
+        label: "兴趣板块侧标"
+        type: "string"
+        required: true
+      - name: "beyondTitle"
+        label: "兴趣板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "beyondIntro"
+        label: "兴趣板块引言"
+        type: "text"
+        required: true
+      - name: "interest1Title"
+        label: "兴趣 1：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "interest1Body"
+        label: "兴趣 1：简介"
+        type: "text"
+        required: true
+      - name: "interest2Title"
+        label: "兴趣 2：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "interest2Body"
+        label: "兴趣 2：简介"
+        type: "text"
+        required: true
+      - name: "interest3Title"
+        label: "兴趣 3：标题"
+        type: "string"
+        required: true
+        description: "填写纯文本，无需输入 HTML。"
+      - name: "interest3Body"
+        label: "兴趣 3：简介"
+        type: "text"
+        required: true
+  contact:
+    label: "联系信息"
+    type: "object"
+    fields:
+      - name: "contactEyebrow"
+        label: "联系板块侧标"
+        type: "string"
+        required: true
+      - name: "contactTitle"
+        label: "联系板块标题"
+        type: "string"
+        required: true
+        description: "填写纯文本；板块标题的装饰句点由模板保留。"
+      - name: "contactBody"
+        label: "联系板块正文"
+        type: "text"
+        required: true
+      - name: "contactPending"
+        label: "联系方式待确认说明"
+        type: "string"
+        required: true
+      - name: "email"
+        label: "公开联系邮箱（可选）"
+        type: "string"
+        description: "仅填写邮箱地址，不加 mailto:；留空时不显示邮箱链接。"
+      - name: "profileUrl"
+        label: "公开个人主页链接（可选）"
+        type: "string"
+        description: "使用完整的 https:// 或 http:// 地址；留空时不显示链接。"
+      - name: "profileLabel"
+        label: "个人主页链接文字（可选）"
+        type: "string"
+        description: "与个人主页链接一起填写；留空时使用链接地址。"
+  footer:
+    label: "页脚"
+    type: "object"
+    fields:
+      - name: "footerCredit"
+        label: "页脚署名说明"
+        type: "string"
+        required: true
+      - name: "backTop"
+        label: "页脚回到顶部文字"
+        type: "string"
+        required: true
+      - name: "footerName"
+        label: "页脚姓名"
+        type: "string"
+        required: true
+settings:
+  content:
+    merge: true
