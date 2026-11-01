@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "张正· 个人主页",
-    "description": "张正的个人主页：研究、产品策略、数据与人工智能。",
+    "description": "张正的个人主页：研究、策略产品与数据分析。",
     "ogTitle": "张正 · 个人主页",
     "ogDescription": "Research, product thinking, data analysis, and the stories in between."
   },
@@ -25,12 +25,12 @@
   "home": {
     "brand": "张正",
     "portraitCaption": "数据 · 思考 ",
-    "sideStatus": "乐于交流 · 研究与合作",
+    "sideStatus": "乐于交流 ",
     "eyebrow": "你好，我是",
-    "heroDescription": "北京理工大学能源与气候经济硕士在读，本科毕业于北京林业大学金融学专业。我关注数据分析、AI 产品应用、用户增长策略，以及经济与可持续发展领域的定量研究。",
+    "heroDescription": "北京理工大学能源与气候经济硕士在读。我关注数据分析、AI 产品应用、用户增长策略，以及经济与可持续发展领域的定量研究。",
     "pill1": "产品与增长策略",
     "pill2": "数据分析与 AI",
-    "pill3": "家庭清洁能源研究",
+    "pill3": "家庭清洁能源转型",
     "exploreWork": "探索我的项目",
     "getInTouch": "联系方式1806176657",
     "heroDeckBefore": "希望用",
@@ -42,14 +42,14 @@
     "portraitAlt": "Portrait placeholder with initials ZZ",
     "portraitInitials": "ZZ",
     "heroVertical": "THINK · BUILD · EXPLORE",
-    "portraitImage": "/assets/uploads/file.jpg"
+    "portraitImage": "/assets/uploads/1101.jpg"
   },
   "about": {
     "sectionAbout": "关于我",
     "aboutTitle": "关于我的一些故事",
     "aboutIntro": "希望长期成为一名兼具数据能力、业务判断和产品思维的用户增长产品经理。",
     "toolsLabel": "常用工具",
-    "aboutBodyBefore": "我的学习起点是金融学，研究生阶段进一步走向能源与气候经济。快手、京东和滴滴的实习经历，让我有机会把数据分析、产品策略与实际业务结合起来。不同的问题背后，我始终关心同一件事：",
+    "aboutBodyBefore": "快手、京东和滴滴的实习经历，让我有机会把数据分析、产品策略与实际业务结合起来。不同的问题背后，我始终关心同一件事：",
     "aboutBodyEmphasis": "真正需要解决的问题是什么，我们又该如何验证解决效果？",
     "tool1": "Python",
     "tool2": "SQL",
@@ -60,7 +60,7 @@
   "education": {
     "edu1School": "北京理工大学",
     "edu1Degree": "学硕 · 能源与气候经济",
-    "edu1Detail": "融合经济分析、能源系统与政策建模的交叉学科",
+    "edu1Detail": "融合能源动力、管理科学与工程与应用经济学的交叉学科",
     "edu2School": "北京林业大学",
     "edu2Degree": "本科 · 金融学",
     "edu2Detail": "金融理论、定量分析与商业决策",
@@ -100,19 +100,19 @@
     "researchSummary": "关注金融、能源转型与可持续发展之间的关系，尝试以定量方法寻找可解释的答案。",
     "researchLabel1": "SCI论文｜学生第一作者｜计量经济学｜绿色金融",
     "researchFocus1": "绿色金融 × 能源转型",
-    "paperDesc": "以学生第一作者身份开展的研究，利用空间计量与面板门槛模型，考察绿色金融对清洁能源转型的非线性作用及空间溢出效应。",
-    "researchLabel2": "科研项目参与",
-    "researchFocus2": "循环经济 · 可持续发展",
+    "paperDesc": "以学生第一作者身份独立完成论文撰写，并录用至SCI二区期刊。研究聚焦绿色金融对能源转型的非线性影响及空间溢出机制，创新构建 SPDM-PTRM 组合模型，识别绿色金融促进能源转型的显著阈值特征，并发现跨越特定发展阈值后促进效率下降的“越发展越低效”现象。",
+    "researchLabel2": "国家自然科学基金面上｜资源循环｜低碳转型",
+    "researchFocus2": "废弃家电回收 × 资源潜力 × 成本效益 × 碳减排",
     "research2Title": "家庭能源清洁转型：决策机理、影响评估与政策设计",
-    "research2Body": "参与废弃家电回收利用体系的资源潜力、经济价值与环境效益评估，研究涉及情景分析、动态物质流分析与生命周期评价。",
-    "researchFootnote": "以学生第一作者身份独立完成论文撰写，并录用至SCI二区期刊。研究聚焦绿色金融对能源转型的非线性影响及空间溢出机制，创新构建 SPDM-PTRM 组合模型，识别绿色金融促进能源转型的显著阈值特征，并发现跨越特定发展阈值后促进效率下降的“越发展越低效”现象。负责研究框架设计、数据收集与处理、模型构建及论文撰写，基于 Wind、国泰安数据，使用 Python 完成数据清洗与异常处理，并使用 Stata 开展门槛效应、空间杜宾、稳健性、异质性及机制分析。",
+    "research2Body": "参与国家自然科学基金面上项目 《家庭能源清洁转型决策机理、影响评估及政策设计》（2025—2028）。围绕“双碳”背景下资源循环利用与绿色低碳发展，按照“理论淘汰量预测—资源潜力测算—成本效益分析”开展废弃家电回收研究。",
+    "researchFootnote": "负责研究框架设计、数据收集与处理、模型构建及论文撰写，基于 Wind、国泰安数据，使用 Python 完成数据清洗与异常处理，并使用 Stata 开展门槛效应、空间杜宾、稳健性、异质性及机制分析。",
     "research1Title": "More Developed Less Efficient? Spatial Threshold Effects of Green Finance on Clean Energy Transition Based on SPDM-PTRM Model",
     "research1Method1": "Spatial Durbin Model",
     "research1Method2": "Panel Threshold",
     "research1Method3": "Stata / Python",
-    "research2Method1": "Material Flow Analysis",
-    "research2Method2": "LCA",
-    "research2Method3": "Scenario Analysis"
+    "research2Method1": "Dynamic Material Flow Analysis",
+    "research2Method2": "Life Cycle Assessment (LCA)",
+    "research2Method3": "Cost-Benefit Analysis"
   },
   "projects": {
     "sectionProjects": "项目实践",
@@ -123,14 +123,14 @@
     "filterData": "数据与自动化",
     "filterResearch": "科研",
     "project1Type": "产品策略 · AI",
-    "project1Title": "为什么用户会关闭 Push 通知？",
-    "project1Body": "结合用户行为特征、近邻匹配与大模型归纳，分析触达疲劳背后的原因，并设计更合理的用户触达策略。",
+    "project1Title": "AI驱动的 Push 关闭预测、归因与治理",
+    "project1Body": "针对 Push 过度触达可能导致用户关闭通知、长期损失可触达规模的问题，参与构建从风险识别、原因归因到策略治理的完整链路。围绕用户画像、活跃度及 Push 发送/响应行为进行特征分析，并通过聚类、近邻匹配与大模型归纳识别潜在关闭原因，结合真实用户反馈校准判断。最终将高风险、触达敏感且可干预的人群纳入差异化治理，实现发送量下降的同时减少新增关闭并积累长期 DAU 收益。",
     "project2Type": "产品策略 · AI",
-    "project2Title": "用 AI 发现更多有价值的内容",
-    "project2Body": "参与多阶段内容挖掘方案，将规则过滤、初筛排序与大模型内容质量判断结合，探索更有效的内容供给方式。",
+    "project2Title": "基于用户价值与场景效率的 Push 引导 Quota 优化",
+    "project2Body": "针对 Push 开关引导总曝光资源有限、低效场景提前占用 Quota 的问题，分别从用户价值、响应敏感度和行为场景进行分层。通过差异化频控和场景 Quota 腾挪，将有限曝光机会优先分配给高价值、高响应人群及高转化深层场景，在降低无效曝光的同时提升整体开关开启效率。",
     "project3Type": "数据 · 自动化",
     "project3Title": "把人工审核变成 Python 工作流",
-    "project3Body": "将多种返利业务规则转化为可执行的自动校验逻辑，实现规则匹配、异常识别与结构化结果输出。",
+    "project3Body": "针对多类返利及结算规则依赖人工逐项核验、效率低且容易遗漏的问题，拆解业务类型、计算基数、点位、触发条件及异常标准，并独立使用 Python 将高频人工判断转化为批量校验程序。实现规则匹配、异常标记和结果输出自动化，覆盖约80%的高频人工审核场景。",
     "project4Type": "科研 · 数据分析",
     "project4Title": "量化绿色金融对能源转型的影响",
     "project4Body": "通过空间计量、门槛模型和实证检验，研究绿色金融支持清洁能源转型的边界条件与作用机制。",
@@ -149,7 +149,7 @@
     "project4Footer3": "Data"
   },
   "honors": {
-    "sectionHighlights": "荣誉与经历",
+    "sectionHighlights": "竞赛经历",
     "highlightsTitle": "一路上的小小收获",
     "award1Title": "中国青年绿色科技创新大赛",
     "award1Detail": "国家级二等奖",
@@ -169,15 +169,16 @@
     "interest1Title": "阅读与思考",
     "interest1Body": "喜欢历史、文学、经济和社会科学，也享受发现未知话题的过程。",
     "interest2Title": "跑步与运动",
-    "interest2Body": "通过跑步、乒乓球和规律运动保持节奏。",
+    "interest2Body": "曾获校级运动会“8*400”接力冠军。",
     "interest3Title": "交流与表达",
-    "interest3Body": "从社团活动、主持到实地调研，喜欢和不同背景的人交流。"
+    "interest3Body": "获得校级辩论赛”捭阖杯“二等奖，曾主持社团元旦晚会，班级元旦晚会。"
   },
   "contact": {
     "contactEyebrow": "保持联系",
     "contactTitle": "好的想法，往往始于一次交流",
     "contactBody": "如果你也关注研究、产品策略、数据分析，或者只是想交换一些有趣的想法，欢迎交流。",
-    "contactPending": "联系方式与社交链接将在本人确认后补充。"
+    "contactPending": "18062176657（微信同号）",
+    "email": "18062176657@163.com"
   },
   "footer": {
     "footerCredit": "用好奇心与耐心制作。",
